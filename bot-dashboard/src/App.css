@@ -1,0 +1,42 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  padding: 20px;
+}
+
+.bot-collection, .your-bot-army {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bot-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+}
+
+.bot-card img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.discharge-button {
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.discharge-button:hover {
+  background-color: #ff1c1c;
+}
