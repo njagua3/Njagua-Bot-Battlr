@@ -10,7 +10,7 @@ function App() {
 
   // Fetch bots data from the server when the component mounts
   useEffect(() => {
-    fetch("http://localhost:8001/bots")
+    fetch("https://json-server-vercel-three-pearl.vercel.app/bots")
       .then((response) => response.json())
       .then((data) => setBots(data));
   }, []);
@@ -40,17 +40,17 @@ function App() {
   return (
     <div className="App">
       <div>
-      <h1>Welcome to Battlr!</h1>
-      <h2>Your Bot Army</h2>
-      <YourBotArmy
-        army={army}
-        releaseBot={releaseBot}
-        dischargeBot={dischargeBot}
-      />
+        <h1>Welcome to Battlr!</h1>
+        <h2>Your Bot Army</h2>
+        <YourBotArmy
+          army={army}
+          releaseBot={releaseBot}
+          dischargeBot={dischargeBot}
+        />
       </div>
-       <div>
-      <h2>Available Bots</h2>
-      <BotCollection bots={bots} enlistBot={enlistBot} />
+      <div>
+        <h2>Available Bots</h2>
+        <BotCollection bots={bots} enlistBot={enlistBot} />
       </div>
     </div>
   );
