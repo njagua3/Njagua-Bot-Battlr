@@ -3,6 +3,10 @@ body {
   color: #ffffff;
   font-family: Arial, sans-serif;
 }
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 .app {
   padding: 20px;
